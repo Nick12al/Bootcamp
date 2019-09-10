@@ -38,7 +38,7 @@ var updatePhelpsMemorial = function() {
     Phelps Memorial Hospital Center's address is incorrect. Find the listing, update it, and then 
     log the updated document to the console. 
    */
-  Listing.findOneAndUpdate({ code : 'PHL'} , { $set:{address : '701 N Broadway, Sleepy Hollow, NY 105911953 Museum Rd, Gainesville, FL 32603'}},function(err, document){
+  Listing.findOneAndUpdate({ code : 'PHL'} , { $set:{address : '1953 Museum Rd, Gainesville, FL 32603'}},function(err, document){
     if (err) return handleError(err);
     console.log(document);
 
